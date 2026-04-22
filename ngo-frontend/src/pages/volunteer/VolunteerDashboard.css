@@ -1,0 +1,69 @@
+.volunteer-dashboard { padding-bottom: 80px; }
+.vol-tasks h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 20px; }
+.vol-section-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 18px; margin-bottom: 20px; }
+.vol-section-head h3 { margin-bottom: 6px; }
+.vol-section-note { color: var(--text-muted); font-size: 0.9rem; margin: 0; }
+.vol-view-toggle { display: inline-flex; gap: 8px; padding: 6px; background: var(--bg-light); border: 1px solid var(--border); border-radius: 999px; }
+.vol-view-btn { border: 0; background: transparent; color: var(--text-muted); font-weight: 700; padding: 10px 16px; border-radius: 999px; cursor: pointer; transition: var(--transition); }
+.vol-view-btn.active { background: linear-gradient(135deg, rgba(255,107,53,0.12), rgba(46,196,182,0.16)); color: var(--text-primary); box-shadow: inset 0 0 0 1px rgba(255,107,53,0.18); }
+.section-spacer { margin-top: 36px; }
+.task-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.task-card { padding: 24px; }
+.task-card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 16px; }
+.task-card-header h4 { font-size: 1rem; font-weight: 700; color: var(--text-primary); margin-bottom: 3px; }
+.task-pickup { font-size: 0.75rem; color: var(--text-muted); }
+.task-details { display: flex; flex-direction: column; gap: 10px; background: var(--bg-light); border-radius: var(--radius-sm); padding: 14px; margin-bottom: 14px; }
+.td-row { display: flex; align-items: center; gap: 10px; font-size: 0.875rem; }
+.td-row span:first-child { flex-shrink: 0; }
+.td-row strong { color: var(--text-primary); font-weight: 600; }
+.task-assigned { font-size: 0.75rem; color: var(--text-muted); margin-bottom: 14px; }
+.task-actions { display: flex; gap: 8px; }
+.task-actions-wrap { flex-wrap: wrap; margin-bottom: 16px; }
+.task-actions .act-btn[disabled] { opacity: 0.7; cursor: not-allowed; }
+.task-map-card { margin-top: 16px; padding: 14px; border-radius: var(--radius-sm); background: var(--bg-light); border: 1px solid var(--border); }
+.task-map-header { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 10px; font-size: 0.82rem; color: var(--text-muted); }
+.task-map-header strong { color: var(--text-primary); font-size: 0.88rem; }
+.task-map-header a { color: var(--primary); font-weight: 600; text-decoration: none; }
+.task-map-frame { width: 100%; height: 240px; border: 0; border-radius: var(--radius-sm); }
+.vol-calendar-shell { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(320px, 0.9fr); gap: 20px; }
+.vol-calendar, .vol-agenda { padding: 24px; }
+.vol-calendar-head { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 18px; }
+.vol-calendar-head h4, .vol-agenda-head h4 { margin: 0 0 4px; font-size: 1.15rem; color: var(--text-primary); }
+.vol-calendar-head p, .vol-agenda-head p { margin: 0; color: var(--text-muted); font-size: 0.86rem; }
+.vol-calendar-nav { display: flex; gap: 8px; flex-wrap: wrap; }
+.vol-calendar-weekdays { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 10px; margin-bottom: 10px; }
+.vol-calendar-weekdays span { text-align: center; font-size: 0.8rem; font-weight: 700; color: var(--text-muted); letter-spacing: 0.05em; text-transform: uppercase; }
+.vol-calendar-grid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 10px; }
+.vol-calendar-cell { min-height: 138px; border: 1px solid var(--border); background: #fff; border-radius: var(--radius-md); padding: 12px; text-align: left; cursor: pointer; transition: var(--transition); display: flex; flex-direction: column; gap: 10px; }
+.vol-calendar-cell:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+.vol-calendar-cell.muted { background: rgba(15,23,42,0.03); color: var(--text-muted); }
+.vol-calendar-cell.today { border-color: rgba(255,107,53,0.4); }
+.vol-calendar-cell.selected { box-shadow: inset 0 0 0 2px rgba(46,196,182,0.32); border-color: rgba(46,196,182,0.34); }
+.vol-calendar-date { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.vol-calendar-date span { font-size: 1rem; font-weight: 800; color: var(--text-primary); }
+.vol-calendar-date strong { font-size: 0.72rem; color: var(--text-muted); font-weight: 700; }
+.vol-calendar-events { display: flex; flex-direction: column; gap: 6px; }
+.vol-calendar-pill { border-radius: 12px; padding: 7px 9px; font-size: 0.72rem; font-weight: 700; display: flex; flex-direction: column; gap: 2px; color: var(--text-primary); }
+.vol-calendar-pill.pending { background: rgba(255,183,3,0.16); }
+.vol-calendar-pill.in_progress { background: rgba(255,107,53,0.14); }
+.vol-calendar-pill.completed { background: rgba(6,214,160,0.15); }
+.vol-calendar-pill.cancelled { background: rgba(239,68,68,0.12); }
+.vol-calendar-more { font-size: 0.74rem; color: var(--primary); font-weight: 700; }
+.vol-agenda-head { margin-bottom: 18px; }
+.vol-agenda-list { display: flex; flex-direction: column; gap: 14px; }
+.vol-agenda-item { border: 1px solid var(--border); background: var(--bg-light); border-radius: var(--radius-md); padding: 16px; }
+.vol-agenda-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
+.vol-agenda-top h5 { margin: 0 0 4px; font-size: 0.98rem; color: var(--text-primary); }
+.vol-agenda-top span { color: var(--text-muted); font-size: 0.82rem; }
+.vol-agenda-meta { display: flex; flex-direction: column; gap: 6px; color: var(--text-secondary); font-size: 0.86rem; }
+@media (max-width: 768px) {
+  .vol-section-head { flex-direction: column; align-items: stretch; }
+  .vol-view-toggle { width: 100%; }
+  .vol-view-btn { flex: 1; }
+  .task-cards { grid-template-columns: 1fr; }
+  .vol-calendar-shell { grid-template-columns: 1fr; }
+  .vol-calendar-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .vol-calendar-weekdays { display: none; }
+  .vol-calendar-cell { min-height: 118px; }
+  .task-map-frame { height: 220px; }
+}

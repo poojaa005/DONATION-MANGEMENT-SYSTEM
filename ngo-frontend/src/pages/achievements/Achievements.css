@@ -1,0 +1,64 @@
+.achievements-page { padding-bottom: 80px; padding-top: 70px; }
+.achievements-hero { position: relative; background: linear-gradient(150deg, #FFF8F5, #FFF0E8, #EDFFFE); padding: 70px 0 56px; text-align: center; margin-bottom: 60px; overflow: hidden; }
+.achievements-hero-bg { position: absolute; inset: 0; pointer-events: none; }
+.ach-shape { position: absolute; border-radius: 50%; opacity: 0.08; }
+.ach-shape-1 { width: 400px; height: 400px; background: var(--primary); top: -150px; right: -80px; }
+.ach-shape-2 { width: 300px; height: 300px; background: var(--secondary); bottom: -100px; left: -60px; }
+.hero-badge { display: inline-block; background: var(--primary-light); color: var(--primary); padding: 6px 18px; border-radius: 100px; font-size: 0.82rem; font-weight: 700; margin-bottom: 18px; border: 1px solid rgba(255,107,53,0.2); }
+.achievements-hero h1 { font-family: var(--font-display); font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; color: var(--text-primary); margin-bottom: 14px; }
+.achievements-hero p { font-size: 1.05rem; color: var(--text-secondary); max-width: 600px; margin: 0 auto; line-height: 1.7; }
+.ach-section { margin-bottom: 60px; }
+.ach-section-header { margin-bottom: 32px; }
+.ach-section-header h2 { font-family: var(--font-display); font-size: 1.8rem; font-weight: 700; color: var(--text-primary); margin-bottom: 6px; }
+.ach-section-header p { font-size: 0.95rem; color: var(--text-muted); }
+.milestones-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 18px; }
+.milestone-card { text-align: center; padding: 28px 16px; border-radius: var(--radius-lg); border: 2px solid; transition: var(--transition); position: relative; }
+.milestone-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
+.milestone-card.achieved { background: linear-gradient(145deg, #FFF8F5, #FFF3EE); border-color: rgba(255,107,53,0.25); }
+.milestone-card.not-achieved { background: var(--bg-light); border-color: var(--border); opacity: 0.6; }
+.mc-icon { font-size: 0.72rem; font-weight: 700; line-height: 1.2; min-height: 2.4em; margin-bottom: 12px; display: flex; align-items: center; justify-content: center; }
+.mc-value { font-size: 1.5rem; font-weight: 800; color: var(--text-primary); margin-bottom: 6px; line-height: 1.1; }
+.mc-label { font-size: 0.78rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; }
+.mc-badge { position: absolute; top: -10px; right: -10px; background: var(--success); color: white; font-size: 0.68rem; font-weight: 700; padding: 3px 8px; border-radius: 100px; border: 2px solid white; }
+.top-campaigns-list { display: flex; flex-direction: column; gap: 16px; }
+.top-camp-row { display: flex; align-items: center; gap: 20px; background: white; border-radius: var(--radius-md); padding: 20px 24px; border: 1px solid var(--border); transition: var(--transition); }
+.top-camp-row:hover { box-shadow: var(--shadow-md); transform: translateX(4px); }
+.tc-rank { width: 40px; height: 40px; background: linear-gradient(135deg, var(--primary), var(--accent-dark)); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; font-weight: 800; color: white; font-size: 0.9rem; flex-shrink: 0; }
+.tc-info { min-width: 200px; }
+.tc-info h4 { font-size: 0.95rem; font-weight: 700; color: var(--text-primary); margin-bottom: 5px; }
+.tc-progress { flex: 1; display: flex; flex-direction: column; gap: 6px; }
+.tc-amounts { font-size: 0.78rem; color: var(--text-muted); }
+.tc-pct { font-size: 1.1rem; font-weight: 800; color: var(--primary); min-width: 48px; text-align: right; }
+.ngo-ach-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+.ngo-ach-card { padding: 0; }
+.nac-header { display: flex; gap: 14px; align-items: center; padding: 22px 22px 0; }
+.nac-avatar { width: 48px; height: 48px; background: linear-gradient(135deg, var(--secondary), var(--navy)); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: 1.3rem; font-weight: 800; color: white; flex-shrink: 0; }
+.nac-header h3 { font-size: 0.95rem; font-weight: 700; color: var(--text-primary); margin-bottom: 3px; }
+.nac-header p { font-size: 0.78rem; color: var(--text-muted); }
+.nac-desc { padding: 12px 22px; font-size: 0.82rem; color: var(--text-secondary); line-height: 1.6; }
+.nac-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); margin: 0 0 14px; }
+.nac-stat { text-align: center; padding: 14px 8px; border-right: 1px solid var(--border); }
+.nac-stat:last-child { border-right: none; }
+.nac-stat span { display: block; font-size: 1rem; font-weight: 800; color: var(--text-primary); margin-bottom: 3px; }
+.nac-stat label { font-size: 0.68rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.04em; }
+.nac-badge { margin: 0 22px 18px; background: #FFF8E7; border: 1px solid rgba(255,183,3,0.3); color: var(--accent-dark); font-size: 0.8rem; font-weight: 600; padding: 8px 14px; border-radius: var(--radius-sm); text-align: center; }
+.impact-section { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 50%, var(--accent-dark) 100%); border-radius: var(--radius-xl); padding: 48px; color: white; }
+.impact-section .ach-section-header h2 { color: white; }
+.impact-section .ach-section-header p { color: rgba(255,255,255,0.7); }
+.impact-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.impact-card { background: rgba(255,255,255,0.12); border-radius: var(--radius-lg); padding: 24px; border: 1px solid rgba(255,255,255,0.2); text-align: center; transition: var(--transition); }
+.impact-card:hover { background: rgba(255,255,255,0.18); transform: translateY(-4px); }
+.ic-icon { font-size: 0.8rem; font-weight: 700; line-height: 1.2; min-height: 2.2em; margin-bottom: 12px; display: flex; align-items: center; justify-content: center; }
+.impact-card h4 { font-size: 0.9rem; font-weight: 700; margin-bottom: 8px; color: white; }
+.impact-card p { font-size: 0.8rem; color: rgba(255,255,255,0.75); line-height: 1.6; }
+@media (max-width: 1024px) { .milestones-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 768px) {
+  .milestones-grid { grid-template-columns: repeat(2, 1fr); }
+  .ngo-ach-grid { grid-template-columns: 1fr; }
+  .impact-cards { grid-template-columns: repeat(2, 1fr); }
+  .tc-info { min-width: 140px; }
+}
+@media (max-width: 480px) {
+  .impact-cards { grid-template-columns: 1fr; }
+  .impact-section { padding: 28px; }
+}

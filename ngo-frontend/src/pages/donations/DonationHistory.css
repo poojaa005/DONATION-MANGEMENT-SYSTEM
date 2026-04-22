@@ -1,0 +1,35 @@
+.donation-history-page { padding-bottom: 80px; }
+.page-header { margin-bottom: 40px; }
+.history-list { display: flex; flex-direction: column; gap: 14px; }
+.history-row { display: flex; align-items: center; gap: 18px; padding: 20px 24px; }
+.hr-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1.5rem;
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
+}
+.hr-icon.is-money {
+  background: linear-gradient(135deg, #fff0d9, #ffd29d);
+}
+.hr-icon.is-goods {
+  background: linear-gradient(135deg, #ddfbf7, #9be5d8);
+}
+.hr-info { flex: 1; }
+.hr-info h4 { font-size: 0.95rem; font-weight: 700; color: var(--text-primary); margin-bottom: 4px; }
+.hr-date { font-size: 0.78rem; color: var(--text-muted); }
+.hr-type { flex-shrink: 0; }
+.hr-amount { font-size: 1.1rem; font-weight: 800; color: var(--primary); min-width: 120px; text-align: right; }
+.hr-amount-muted { color: var(--text-muted); }
+.hr-status { flex-shrink: 0; }
+.receipt-link { font-size: 0.8rem; font-weight: 600; color: var(--secondary); padding: 6px 12px; border: 1px solid var(--secondary); border-radius: var(--radius-sm); transition: var(--transition); }
+.receipt-link:hover { background: var(--secondary-light); }
+@media (max-width: 640px) {
+  .history-row { flex-wrap: wrap; }
+  .hr-icon { width: 46px; height: 46px; border-radius: 14px; }
+  .hr-amount { text-align: left; }
+}

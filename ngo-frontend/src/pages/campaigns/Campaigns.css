@@ -1,0 +1,49 @@
+.campaigns-page { padding-bottom: 80px; }
+
+.campaigns-hero {
+  background: linear-gradient(135deg, #FFF3EE 0%, #FFF0E8 100%);
+  padding: 50px 0 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid var(--border);
+}
+
+.campaigns-filters {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.filter-search {
+  flex: 1;
+  min-width: 200px;
+}
+
+.filter-select {
+  width: 160px;
+}
+
+.results-count {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  white-space: nowrap;
+  margin-left: auto;
+}
+
+.campaigns-grid-page {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 1024px) {
+  .campaigns-grid-page { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .campaigns-grid-page { grid-template-columns: 1fr; }
+  .campaigns-filters { flex-direction: column; }
+  .filter-select, .filter-search { width: 100%; }
+}
