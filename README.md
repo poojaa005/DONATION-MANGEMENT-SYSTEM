@@ -228,7 +228,9 @@ The project uses GitHub Actions for continuous integration and deployment:
 * CI/CD integration using GitHub Actions
 
 ---
+## 🎥 Project Demo
 
+[(Watch my project video on LinkedIn)](https://www.linkedin.com/posts/poojaa-kumar3110_fullstackdevelopment-projectshowcase-java-ugcPost-7453036905153105920-pSXa/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEdPtpMBABITBCHqeIVR7M9_tm5UgLNlg9c)
 ## Author
 
 Poojaa Kumar
